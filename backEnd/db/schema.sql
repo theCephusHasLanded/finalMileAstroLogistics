@@ -7,7 +7,7 @@ CREATE DATABASE planets_dev;
 -- Connect to DB
 \c planets_dev;
 
--- Create a table for our snacks
+-- Create a table for our planets
 CREATE TABLE planets (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255),
@@ -20,13 +20,13 @@ CREATE TABLE planets (
 -- always drop the table if it exists
 DROP TABLE IF EXISTS reviews;
 
--- Create a table for our snacks reviews
+-- Create a table for our planets reviews
 CREATE TABLE reviews (
     id SERIAL PRIMARY KEY,
     reviewer TEXT,
     title TEXT,
     content TEXT,
     rating INT CHECK (rating >= 1 AND rating <= 5),
-    planets_id INTEGER REFERENCES snacks (id)
+    planets_id INTEGER REFERENCES planets (id)
     ON DELETE CASCADE
 );
