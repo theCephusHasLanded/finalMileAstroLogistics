@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
-import logo from "../assets/planet.png";
+// import logo from "../assets/planet.png";
 import ThemeContext from "./ThemeContext";
 
 function NavBar() {
@@ -15,7 +15,7 @@ function NavBar() {
       <Navbar bg={themeMode} expand="lg" style={{ fontFamily: "Funk Gibson" }}>
         <div className="logo">
           <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="Logo" height="40" />
+            {/* <img src={logo} alt="Logo" height="40" /> */}
             Planet Purchase Plans
           </Navbar.Brand>
         </div>

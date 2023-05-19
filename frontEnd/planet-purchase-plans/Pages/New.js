@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import NewPlanet from "../Components/NewPlanet";
+import NewPlanet from "../src/Components/NewPlanet";
 
 function New() {
   return (

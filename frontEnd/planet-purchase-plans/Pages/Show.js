@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import PlanetDetails from "../Components/PlanetDetails";
+import PlanetDetails from "../src/Components/PlanetDetails";
 
 function Show() {
   return (

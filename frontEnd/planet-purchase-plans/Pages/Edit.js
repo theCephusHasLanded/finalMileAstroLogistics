@@ -1,9 +1,12 @@
-import EditPlanet from "../Components/EditPlanet";
+import EditPlanet from "../src/Components/EditPlanet";
 import { Container } from "react-bootstrap";
 
 function Edit() {
   return (
-    <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
+    <Container
+      className="d-flex justify-content-center align-items-center"
+      style={{ minHeight: "100vh" }}
+    >
       <div className="New Edit">
         <h2 className="text-center">Edit</h2>
         <EditPlanet />

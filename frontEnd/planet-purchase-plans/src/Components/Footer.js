@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/granola.png";
+// import logo from "../assets/granola.png";
 import pursuitLogo from "../assets/pursuit.png";
 import gifcat from "../assets/gitcat.gif";
 
@@ -41,7 +41,7 @@ const Footer = () => {
         </Col>
         <Col md={2} className="text-center">
           <Link to="#">
-            <img src={logo} alt="Logo" height="80" />
+            {/* <img src={logo} alt="Logo" height="80" /> */}
           </Link>
         </Col>
         <Col

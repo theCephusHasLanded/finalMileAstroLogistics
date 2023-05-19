@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 // PAGES
-import Home from "./Pages/Home";
-import Error from "./Pages/Error";
-import Index from "./Pages/Index";
-import Show from "./Pages/Show";
-import New from "./Pages/New";
-import Edit from "./Pages/Edit";
+import Home from "../Pages/Home";
+import Error from "../Pages/Error";
+import Index from "../Pages/Index";
+import Show from "../Pages/Show";
+import New from "../Pages/New";
+import Edit from "../Pages/Edit";
 
 // COMPONENTS
 import NavBar from "./Components/NavBar";
