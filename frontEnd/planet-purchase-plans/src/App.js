@@ -25,7 +25,7 @@ function App() {
   return (
     <div className={`App${darkMode ? ' dark-mode' : ''}`}>
       <Router>
-        <NavBar toggleDarkMode={toggleDarkMode} />
+        <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

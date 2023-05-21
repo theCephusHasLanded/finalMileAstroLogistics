@@ -68,7 +68,7 @@ function Reviews() {
   return (
     <div>
       <section className="Reviews text-center" style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '50px' }}>
-        <Button onClick={handleClick} variant="primary" style={{ backgroundColor: '#4CAF50', fontFamily: 'Funk Gibson' }}>
+        <Button onClick={handleClick} variant="primary" style={{ backgroundColor: '#800080', fontFamily: 'Syne', boxShadow: '0px 0px 20px #800080', fontSize: '1.2rem' }}>
           {showAddReview ? "Hide Form" : "Add New Review"}
         </Button>
         {showAddReview && (
@@ -76,6 +76,9 @@ function Reviews() {
             <h5>Add a New Review</h5>
           </ReviewForm>
         )}
+        <br />
+        <br />
+        <br />
         {
           reviews.map((review) => {
             return <Review key={review.id}

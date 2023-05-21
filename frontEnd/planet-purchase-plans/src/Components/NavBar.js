@@ -21,7 +21,8 @@ function NavBar() {
       <Navbar bg={themeMode} expand="lg" style={navbarStyle}>
         <div className="logo">
           <Navbar.Brand as={Link} to="/">
-          <img src={logo} alt="Logo" height="40" />
+              <img src={logo} alt="Logo" height="40" />
+
             Planet Purchase Plans
           </Navbar.Brand>
         </div>

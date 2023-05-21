@@ -5,7 +5,7 @@ import { Table, Button } from "react-bootstrap";
 
 const API = process.env.REACT_APP_API_URL;
 
-function Planets() {
+function Planets({ darkMode }) {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function Planets() {
   };
 
   const tableStyle = {
-    background: "linear-gradient(to bottom, #44234D, #360B41)",
+    background: darkMode ? "linear-gradient(to bottom, #44234D, #360B41)" : "linear-gradient(to bottom, #E6F2F5, #C8E1E9)",
     border: "none",
     borderRadius: "10px",
     boxShadow: "5px 5px 10px #BFBFBF",
@@ -29,14 +29,14 @@ function Planets() {
   };
 
   const tableHeaderStyle = {
-    background: "linear-gradient(to bottom, #6A3795, #4D1C76)",
-    color: "white",
+    background: darkMode ? "linear-gradient(to bottom, #6A3795, #4D1C76)" : "linear-gradient(to bottom, #E6F2F5, #C8E1E9)",
+    color: darkMode ? "white" : "black",
     textAlign: "center",
     fontFamily: "Syne",
   };
 
   const buttonStyle = {
-    backgroundColor: "#7327A6",
+    backgroundColor: darkMode ? "#7327A6" : "#FF7F00",
     color: "white",
     fontFamily: "Syne",
   };
@@ -48,7 +48,7 @@ function Planets() {
           <tr>
             <th colSpan="2" style={tableHeaderStyle}>
               <Button variant="success" style={buttonStyle}>
-                Take Me to the Planets!
+                Behold New Transits Await!
               </Button>
             </th>
           </tr>

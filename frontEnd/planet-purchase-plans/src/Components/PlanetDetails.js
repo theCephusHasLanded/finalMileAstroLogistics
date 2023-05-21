@@ -14,7 +14,7 @@ function PlanetDetails() {
     signs_of_life: false,
     neighboring_planets: "",
     galaxy: "",
-    photo_url: "/Users/cephusinpursuit/Desktop/finalMileAstroLogistics/frontEnd/planet-purchase-plans/src/Components/images/Aetheria.jpg",
+    photo_url: "",
   });
   const { id } = useParams();
   let navigate = useNavigate();
@@ -50,17 +50,17 @@ function PlanetDetails() {
   return (
     <div>
       <Card className="text-center" style={{ backgroundColor: "#800080" }}>
-        <Card.Body>
+        <Card.Body style= {{display: "flex", flexDirection: "column", alignItems: "center"}}>
           <h3 className="text-success" style={{ fontFamily: "Syne", textShadow: "0px 0px 20px #FF7F00" }}>
             {planet.signs_of_life ? (
               <span>🌱 It's Alive!</span>
             ) : (
               <span>This Planet Does Not Have Life ☄️</span>
-            )}{" "}
+            )}<br/>{" "}
             {planet.name}
           </h3>
-          <h5 style={{ fontFamily: "Syne", textShadow: "0px 0px 20px #FF7F00" }}>
-            <span>{/* <a href={planet.url}>{planet.name}</a> */}</span>{" "}
+          <h5 style={{ fontFamily: "Syne", textShadow: "0px 0px 20px #FF7F00", fontSize: "1.8rem" }}>
+            <span>{ <a href={planet.url}>{planet.name}</a> }</span>{" "}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {planet.distance_from_earth}
           </h5>
           <h6 className="text-muted" style={{ fontFamily: "Syne", textShadow: "0px 0px 20px #FF7F00" }}>{planet.galaxy}</h6>
@@ -71,9 +71,9 @@ function PlanetDetails() {
           ) : null}
 
           {planet.photo_url && (
-            <img src={planet.photo_url} alt={planet.name} style={{ width: "200px" }} />
+            <img src={require(`${planet.photo_url}`)}alt={planet.name} style={{ flex: 1, width: "100%", maxHeight: "550px", objectFit: "cover" }} />
           )}
-
+            <br></br>
           <ButtonGroup className="my-3">
             <Link
               to={`/planets`}

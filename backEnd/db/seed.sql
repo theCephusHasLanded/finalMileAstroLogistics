@@ -3,18 +3,18 @@
 
 INSERT INTO planets (name, distance_from_earth, signs_of_life, neighboring_planets, galaxy, photo_url)
 VALUES
-    ('Aetheria', 50, true, 'Zephyria, Novara', 'Andromeda Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Aetheria.jpg'),
-    ('Lumina', 30, false, 'Nebulia, Astralis', 'Whirlpool Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Lumina.jpg'),
-    ('Solara', 10, true, 'Celestia, Gaia Prime', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Solara.jpg'),
-    ('Zephyria', 70, true, 'Aetheria, Novara', 'Andromeda Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Zephyria.jpg'),
-    ('Novara', 55, false, 'Aetheria, Zephyria', 'Andromeda Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Novara.jpg'),
-    ('Astralis', 80, true, 'Elysium, Lumina', 'Triangulum Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Astralis.jpg'),
-    ('Veridian', 25, false, 'Xanadu, Olympus', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Veridian.jpg'),
-    ('Celestia', 15, true, 'Solara, Gaia Prime', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Celestia.jpg'),
-    ('Gaia Prime', 20, false, 'Solara, Celestia', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/GaiaPrime.jpg'),
-    ('Elysium', 40, true, 'Astralis, Lumina', 'Sculptor Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Elysium.jpg'),
-    ('Xanadu', 120, true, 'Veridian, Olympus', 'Sombrero Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Xanadu.jpg'),
-    ('Olympus', 90, false, 'Xanadu, Elysium', 'Leo I Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Olympus.jpg');
+    ('Aetheria', 50, true, 'Zephyria, Novara', 'Andromeda Galaxy', './images/Aetheria.jpg'),
+    ('Lumina', 30, false, 'Nebulia, Astralis', 'Whirlpool Galaxy', './images/Lumina.jpg'),
+    ('Solara', 10, true, 'Celestia, Gaia Prime', 'Milky Way Galaxy', './images/Solara.jpg'),
+    ('Zephyria', 70, true, 'Aetheria, Novara', 'Andromeda Galaxy', './images/Zephyria.jpg'),
+    ('Novara', 55, false, 'Aetheria, Zephyria', 'Andromeda Galaxy', './images/Novara.jpg'),
+    ('Astralis', 80, true, 'Elysium, Lumina', 'Triangulum Galaxy', './images/Astralis.jpg'),
+    ('Veridian', 25, false, 'Xanadu, Olympus', 'Milky Way Galaxy', './images/Veridian.jpg'),
+    ('Celestia', 15, true, 'Solara, Gaia Prime', 'Milky Way Galaxy', './images/Celestia.jpg'),
+    ('Gaia Prime', 20, false, 'Solara, Celestia', 'Milky Way Galaxy', './images/GaiaPrime.jpg'),
+    ('Elysium', 40, true, 'Astralis, Lumina', 'Sculptor Galaxy', './images/Elysium.jpg'),
+    ('Xanadu', 120, true, 'Veridian, Olympus', 'Sombrero Galaxy', './images/Xanadu.jpg'),
+    ('Olympus', 90, false, 'Xanadu, Elysium', 'Leo I Galaxy', './images/Olympus.jpg');
 
 
 

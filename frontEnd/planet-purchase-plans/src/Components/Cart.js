@@ -39,7 +39,7 @@ function Cart({ planetName }) {
         style={{
           backgroundColor: buttonColor,
           color: buttonTextColor,
-          fontFamily: "Funk Gibson",
+          fontFamily: "Syne",
         }}
       >
         Add Planet 🛒
@@ -51,7 +51,7 @@ function Cart({ planetName }) {
         style={{
           backgroundColor: "black",
           color: "white",
-          fontFamily: "Funk Gibson",
+          fontFamily: "Syne",
         }}
       >
         Remove Planet 🗑️

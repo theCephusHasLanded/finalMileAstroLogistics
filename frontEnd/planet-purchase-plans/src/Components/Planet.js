@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 
 function Planet({ planet }) {
+  const getImagePath = (imageName) => {
+    return require(`./images/${imageName}`).default;
+  };
+
   return (
     <tr>
       <td>
@@ -14,14 +18,14 @@ function Planet({ planet }) {
             )}
           </Card.Header>
           {planet.photo_url && (
-            <Card.Img variant="top" src={process.env.PUBLIC_URL + planet.photo_url} alt={planet.name} />
+            <Card.Img variant="top" src={require(`${planet.photo_url}`)} alt={planet.name} />
           )}
           <Card.Body>
             <Card.Title>{planet.name}</Card.Title>
             <Card.Text>
-              <a href={process.env.PUBLIC_URL + planet.photo_url} target="_blank" rel="noreferrer">
+              {/* <a href={planet.photo_url} target="_blank" rel="noreferrer">
                 View Photo
-              </a>
+              </a> */}
             </Card.Text>
             <Link to={`/planets/${planet.id}`}>
               <Button

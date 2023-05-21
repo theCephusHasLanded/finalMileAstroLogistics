@@ -29,14 +29,22 @@ function NewPlanet() {
     signs_of_life: false,
     neighboring_planets: "",
     galaxy: "",
+    photo_url: "", // Add the photo_url field
   });
 
   const handleTextChange = (event) => {
-    setPlanet({ ...planet, [event.target.id]: event.target.value });
+    event.persist();
+    setPlanet((prevPlanet) => ({
+      ...prevPlanet,
+      [event.target.id]: event.target.value,
+    }));
   };
 
   const handleCheckboxChange = () => {
-    setPlanet({ ...planet, signs_of_life: !planet.signs_of_life });
+    setPlanet((prevPlanet) => ({
+      ...prevPlanet,
+      signs_of_life: !prevPlanet.signs_of_life,
+    }));
   };
 
   const handleSubmit = (event) => {
@@ -45,8 +53,9 @@ function NewPlanet() {
       name: planet.name,
       distance_from_earth: planet.distance_from_earth,
       signs_of_life: planet.signs_of_life,
-      neighboring_planets: planet.neighboring_planets,
+      neighboring_planets: planet.neighboring_planets || "",
       galaxy: planet.galaxy,
+      photo_url: planet.photo_url, // Include the photo_url field
     });
   };
 
@@ -104,6 +113,16 @@ function NewPlanet() {
             type="text"
             value={planet.galaxy}
             placeholder="Galaxy"
+            onChange={handleTextChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="photo_url">
+          <Form.Label>Photo URL:</Form.Label>
+          <Form.Control
+            type="text"
+            value={planet.photo_url}
+            placeholder="Photo URL"
             onChange={handleTextChange}
           />
         </Form.Group>

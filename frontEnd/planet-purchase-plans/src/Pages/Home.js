@@ -21,7 +21,7 @@ return (
 </div>
 </div>
 <p>
-<a href="https://giphy.com/embed/LERpNudtTGL9jNIFNl/video" style={{ fontFamily: "Victor Mono", color: "green" }}>"Start Your Interstellar Journey Today! 👍🏼"</a>
+<a href="https://www.youtube.com/watch?v=uZN5xjoS6TU" style={{ fontFamily: "Victor Mono", color: "green" }}>"Learn More about Direct Imaging & Habitable Worlds -- LKHN* 👍🏼"</a>
 </p>
 </Container>
 );
