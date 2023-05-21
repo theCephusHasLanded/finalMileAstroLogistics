@@ -1,6 +1,11 @@
 # finalMileAstroLogistics
 <br>
 The Wormhole awaits -- *
+
+# Webpage Deployed!
+- [Deployed Front-end URL] (https://main--planet-purchase-plans.netlify.app/planets)
+- [Deployed Back-end URL] (https://planet-purchase-plans.onrender.com/)
+- [Trello Board](https://trello.com/b/cJ5UvCl9/cephus-portfolio-mod-4)
 <br>
 <img width="570" alt="4ppp" src="https://github.com/theCephusHasLanded/finalMileAstroLogistics/assets/113807743/8ca262b4-8596-429d-ad0a-52130c85891d">
 <img width="570" alt="3ppp" src="https://github.com/theCephusHasLanded/finalMileAstroLogistics/assets/113807743/db51bd48-e6eb-4bc2-8695-92357c384166">
@@ -11,10 +16,6 @@ The Wormhole awaits -- *
 Planet Purchase Plans - Backend
 The backend of Planet Purchase Plans is responsible for handling the server-side logic and database operations. It is built using the PERN stack (PostgreSQL, Express.js, React.js, and Node.js). This repository contains the server-side code that powers the API endpoints for managing planets.
 
-# Webpage Deployed!
-- [Deployed Front-end URL] ()
-- [Deployed Back-end URL] ()
-- [Trello Board](https://trello.com/b/cJ5UvCl9/cephus-portfolio-mod-4)
 
 Prerequisites
 Node.js (v14 or above)
