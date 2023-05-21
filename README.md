@@ -1,7 +1,13 @@
 # finalMileAstroLogistics
+<br>
 The Wormhole awaits -- *
-<img width="600" alt="ppp" src="https://github.com/theCephusHasLanded/finalMileAstroLogistics/assets/113807743/7e9af619-bd68-4718-bdb0-30c0699e5e04">
+<br>
+<img width="570" alt="4ppp" src="https://github.com/theCephusHasLanded/finalMileAstroLogistics/assets/113807743/8ca262b4-8596-429d-ad0a-52130c85891d">
+<img width="570" alt="3ppp" src="https://github.com/theCephusHasLanded/finalMileAstroLogistics/assets/113807743/db51bd48-e6eb-4bc2-8695-92357c384166">
+<img width="570" alt="2ppp" src="https://github.com/theCephusHasLanded/finalMileAstroLogistics/assets/113807743/cf7aa715-9d37-42ff-9981-f1ce3bd13a64">
+<img width="570" alt="1ppp" src="https://github.com/theCephusHasLanded/finalMileAstroLogistics/assets/113807743/deaf734e-4e5d-4a16-80bf-462d635753da">
 
+<br>
 Planet Purchase Plans - Backend
 The backend of Planet Purchase Plans is responsible for handling the server-side logic and database operations. It is built using the PERN stack (PostgreSQL, Express.js, React.js, and Node.js). This repository contains the server-side code that powers the API endpoints for managing planets.
 
