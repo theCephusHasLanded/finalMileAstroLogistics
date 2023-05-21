@@ -1,3 +1,24 @@
+# Planet Purchase Plans Project (Frontend)
+
+# Pursuit 9.4 Module 4 - Single Resource Portfolio Project (Frontend)
+
+[Frontend deployed on Netlify]()
+
+| Developer |
+| :--------------: |
+| [Christina Cephus](https://github.com/theCephusHasLanded)
+
+---
+
+### Technologies Used
+
+* JavaScript
+* React
+* Bootstrap (REACT)
+* NPM (axios, react-router-dom, dotenv)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

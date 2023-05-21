@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import logo from "../assets/ppp.png";
+import comingSoonLogo from "../assets/comingsoon.png"; // Add the coming soon logo path
 
 import ThemeContext from "./ThemeContext";
 
@@ -21,8 +22,7 @@ function NavBar() {
       <Navbar bg={themeMode} expand="lg" style={navbarStyle}>
         <div className="logo">
           <Navbar.Brand as={Link} to="/">
-              <img src={logo} alt="Logo" height="40" />
-
+            <img src={logo} alt="Logo" height="40" />
             Planet Purchase Plans
           </Navbar.Brand>
         </div>
@@ -91,6 +91,12 @@ function NavBar() {
                     color: themeMode === "light" ? "black" : "white",
                   }}
                 >
+                  <img
+                    src={comingSoonLogo}
+                    alt="Coming Soon"
+                    height="28"
+                    className="mr-1"
+                  />
                   Add New Planet
                 </Button>
               </Nav.Link>

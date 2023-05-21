@@ -29,6 +29,7 @@ function EditPlanet() {
         console.error(error);
       });
   };
+  
 
   const handleTextChange = (event) => {
     setPlanet({ ...planet, [event.target.id]: event.target.value });

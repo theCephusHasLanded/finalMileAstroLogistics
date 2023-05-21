@@ -56,14 +56,12 @@ function PlanetDetails() {
               <span>🌱 It's Alive!</span>
             ) : (
               <span>This Planet Does Not Have Life ☄️</span>
-            )}<br/>{" "}
-            {planet.name}
+            )}<br/>{planet.name}{" "}
           </h3>
           <h5 style={{ fontFamily: "Syne", textShadow: "0px 0px 20px #FF7F00", fontSize: "1.8rem" }}>
-            <span>{ <a href={planet.url}>{planet.name}</a> }</span>{" "}
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {planet.distance_from_earth}
+            { <a href={planet.url}>{planet.name}</a> } is {" "}{planet.distance_from_earth} Lightyears away from Earth.
           </h5>
-          <h6 className="text-muted" style={{ fontFamily: "Syne", textShadow: "0px 0px 20px #FF7F00" }}>{planet.galaxy}</h6>
+          <h6 className="text-muted" style={{ fontFamily: "Syne", textShadow: "0px 0px 20px #FF7F00" }}>located in the {planet.galaxy}*</h6>
           {planet ? (
             <div>
               <p>Neighboring Planets: {planet.neighboring_planets}</p>

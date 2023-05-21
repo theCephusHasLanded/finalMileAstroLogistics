@@ -8,6 +8,24 @@ function Review({ review, handleDelete, handleEdit }) {
     toggleEditForm(!viewEditForm);
   };
 
+  const names = ["John", "Jane", "Mike", "Emily"]; // Array of names
+
+  const generateReviews = () => {
+    return names.map((name, index) => {
+      const rating = Math.floor(Math.random() * 5) + 1; // Generate a random rating between 1 and 5
+      const content = `This is a review by ${name}. The product was great and I highly recommend it!`; // Customize the review content based on the name
+      return {
+        id: index + 1, // Generate a unique ID for each review
+        title: `Review ${index + 1}`, // Customize the review title
+        rating,
+        content,
+        reviewer: name,
+      };
+    });
+  };
+
+  const reviews = generateReviews();
+
   return (
     <div className="Review text-center">
       <Card className="glow-card" style={{ maxWidth: "500px", margin: "0 auto", paddingTop: "10px" }}>
@@ -26,7 +44,7 @@ function Review({ review, handleDelete, handleEdit }) {
                 <span style={{ fontWeight: "bold", textDecoration: "underline" }}>Rating: {review.rating}</span>
               </h5>
               <br />
-              <img src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="User Face" className="user-avatar" />
+              <img src="https://100k-faces.glitch.me/random-image" alt="User Face" className="user-avatar" />
               <h6>{review.reviewer}</h6>
               <p>{review.content}</p>
             </div>

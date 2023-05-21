@@ -50,7 +50,7 @@ const Footer = () => {
           className="d-flex justify-content-center justify-content-md-end"
         >
             <Link
-            to="https://trello.com/b/xvZFasjG/planet-purchase-plans"
+            to="https://trello.com/b/cJ5UvCl9/cephus-portfolio-mod-4"
             style={{ fontFamily: "Victor Mono", color: "gray" }}
           >
             <h2>Checkout My Trello!</h2>

@@ -8,7 +8,7 @@ function About() {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div style={{ color: darkMode ? 'almond' : 'black', backgroundColor: darkMode ? '#333' : 'almond' }}>
+    <div style={{ color: darkMode ? 'white' : 'black', backgroundColor: darkMode ? '#333' : 'white' }}>
       <div className="text-center">
       <h3>Follow Me on LinkedIn!</h3>
         <div className="d-flex justify-content-center">
@@ -22,7 +22,7 @@ function About() {
                 src={cephusAvatar}
                 alt="The Cephus"
                 roundedCircle
-                width="200"
+                width="100"
               />
             </a>
             <p className="mt-2">
@@ -63,6 +63,7 @@ function About() {
           <br />
           Let's Reach for the Stars! 🚀
         </p>
+        <br />
       </div>
     </div>
   );
