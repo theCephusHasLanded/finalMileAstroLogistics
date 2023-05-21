@@ -13,18 +13,21 @@ function Planet({ planet }) {
               <span>🚫 No Signs of Life</span>
             )}
           </Card.Header>
+          {planet.photo_url && (
+            <Card.Img variant="top" src={process.env.PUBLIC_URL + planet.photo_url} alt={planet.name} />
+          )}
           <Card.Body>
             <Card.Title>{planet.name}</Card.Title>
             <Card.Text>
-              <a href={planet.photo_url} target="_blank" rel="noreferrer">
+              <a href={process.env.PUBLIC_URL + planet.photo_url} target="_blank" rel="noreferrer">
                 View Photo
               </a>
             </Card.Text>
             <Link to={`/planets/${planet.id}`}>
               <Button
                 style={{
-                  backgroundColor: "chartreuse",
-                  fontFamily: "Funk Gibson",
+                  backgroundColor: "#800080",
+                  fontFamily: "Syne",
                 }}
               >
                 Learn More 🚀

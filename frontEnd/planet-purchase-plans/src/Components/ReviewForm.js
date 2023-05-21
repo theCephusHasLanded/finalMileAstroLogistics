@@ -11,7 +11,7 @@ function ReviewForm(props) {
     title: "",
     content: "",
     rating: "",
-    planet_id: id
+    planet_id: id,
   });
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function ReviewForm(props) {
 
   const handleTextChange = (event) => {
     setReview({ ...review, [event.target.id]: event.target.value });
-  }
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -37,12 +37,12 @@ function ReviewForm(props) {
       title: "",
       content: "",
       rating: "",
-      planet_id: id
-    })
-  }
+      planet_id: id,
+    });
+  };
 
   return (
-    <div className="Edit text-center" style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '50px' }}>
+    <div className="Edit text-center">
       {props.children}
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="reviewer">
@@ -74,7 +74,7 @@ function ReviewForm(props) {
             max="5"
             step="1"
             value={review.rating}
-            placeholder="Whats The Rating?"
+            placeholder="Rate The Planet 🪐"
             onChange={handleTextChange}
             required
           />
@@ -85,7 +85,7 @@ function ReviewForm(props) {
             as="textarea"
             name="content"
             value={review.content}
-            placeholder="So What Did You Think..."
+            placeholder="So How Were The Vibes..."
             onChange={handleTextChange}
             required
           />
@@ -93,7 +93,16 @@ function ReviewForm(props) {
 
         <br />
 
-        <Button type="submit" variant="primary" style={{ backgroundColor: '#4CAF50', fontFamily: 'Funk Gibson' }}>
+        <Button
+          type="submit"
+          variant="primary"
+          style={{
+            backgroundColor: "#FFA500",
+            color: "white",
+            fontFamily: "Syne",
+            animation: "glowing 1.5s infinite",
+          }}
+        >
           Submit
         </Button>
       </Form>

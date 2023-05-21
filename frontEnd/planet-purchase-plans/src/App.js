@@ -1,19 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 
 // PAGES
-import Home from "../Pages/Home";
-import Error from "../Pages/Error";
-import Index from "../Pages/Index";
-import Show from "../Pages/Show";
-import New from "../Pages/New";
-import Edit from "../Pages/Edit";
+import Home from '../src/Pages/Home';
+import Error from '../src/Pages/Error';
+import Index from '../src/Pages/Index';
+import Show from '../src/Pages/Show';
+import New from '../src/Pages/New';
+import Edit from '../src/Pages/Edit';
 
 // COMPONENTS
-import NavBar from "./Components/NavBar";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
-import "./App.css";
+import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
+import About from './Components/About';
+import './App.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className={`App${darkMode ? " dark-mode" : ""}`}>
+    <div className={`App${darkMode ? ' dark-mode' : ''}`}>
       <Router>
         <NavBar toggleDarkMode={toggleDarkMode} />
         <main>

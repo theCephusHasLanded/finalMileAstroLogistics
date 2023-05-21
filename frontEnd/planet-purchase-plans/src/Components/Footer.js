@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import logo from "../assets/granola.png";
-import pursuitLogo from "../assets/pursuit.png";
+import logo from "../assets/ppp.png";
+import pursuitLogo from "../assets/pursuit.png"
 import gifcat from "../assets/gitcat.gif";
 
 const Footer = () => {
   return (
-    <Container fluid className="bg-success py-3 foo text-center">
+    <Container fluid className="bg-purple py-3 foo text-center">
       <Row className="justify-content-center">
         <Col md={4} className="text-center text-md-start">
           <h4 className="mb-0">Developer:</h4>
@@ -21,7 +21,7 @@ const Footer = () => {
               <Link
                 to="https://github.com/theCephusHasLanded"
                 className="text-white"
-                style={{ fontFamily: "Funk Gibson" }}
+                style={{ fontFamily: "Syne" }}
               >
                 Christina's Github
               </Link>
@@ -40,8 +40,9 @@ const Footer = () => {
           </Link>
         </Col>
         <Col md={2} className="text-center">
+          <br />
           <Link to="#">
-            {/* <img src={logo} alt="Logo" height="80" /> */}
+            <img src={logo} alt="Logo" height="80" />
           </Link>
         </Col>
         <Col
@@ -50,9 +51,9 @@ const Footer = () => {
         >
             <Link
             to="https://trello.com/b/xvZFasjG/planet-purchase-plans"
-            style={{ fontFamily: "Victor Mono", color: "chartreuse" }}
+            style={{ fontFamily: "Victor Mono", color: "gray" }}
           >
-            <h2>Checkout Our Trello!</h2>
+            <h2>Checkout My Trello!</h2>
           </Link>
         </Col>
       </Row>

@@ -4,12 +4,13 @@ const cors = require("cors");
 const planetsController = require("./Controllers/PlanetsController.js");
 const reviewsController = require("./Controllers/ReviewsController.js");
 
+
 // Middleware
 app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/snacks", planetsController);
+app.use("/planets", planetsController);
 app.use("/reviews", reviewsController);
 
 app.get("/", (_, res) => {

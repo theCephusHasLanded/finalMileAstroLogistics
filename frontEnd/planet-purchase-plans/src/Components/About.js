@@ -8,8 +8,34 @@ function About() {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div style={{ color: darkMode ? 'white' : 'black', backgroundColor: darkMode ? '#333' : 'white' }}>
+    <div style={{ color: darkMode ? 'almond' : 'black', backgroundColor: darkMode ? '#333' : 'almond' }}>
       <div className="text-center">
+      <h3>Follow Me on LinkedIn!</h3>
+        <div className="d-flex justify-content-center">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/thecephus/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={cephusAvatar}
+                alt="The Cephus"
+                roundedCircle
+                width="200"
+              />
+            </a>
+            <p className="mt-2">
+              <a
+                href="https://www.linkedin.com/in/thecephus/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Christina Cephus
+              </a>
+            </p>
+          </div>
+        </div>
         <p>
           Welcome to Planet Purchase Plans! We're Christina and Cephus, two passionate
           software developers with a shared vision to revolutionize the final mile logistics industry.
@@ -37,35 +63,6 @@ function About() {
           <br />
           Let's Reach for the Stars! 🚀
         </p>
-        <br />
-        <br />
-        <br />
-        <h3>Follow Us on LinkedIn!</h3>
-        <div className="d-flex justify-content-center">
-          <div>
-            <a
-              href="https://www.linkedin.com/in/thecephus/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={cephusAvatar}
-                alt="The Cephus"
-                roundedCircle
-                width="150"
-              />
-            </a>
-            <p className="mt-2">
-              <a
-                href="https://www.linkedin.com/in/thecephus/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Christina Cephus
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

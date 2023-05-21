@@ -3,18 +3,22 @@
 
 INSERT INTO planets (name, distance_from_earth, signs_of_life, neighboring_planets, galaxy, photo_url)
 VALUES
-    ('Aetheria', 50, true, 'Zephyria, Novara', 'Andromeda Galaxy', 'backEnd/assets/Aetheria.jpg'),
-    ('Lumina', 30, false, NULL, 'Whirlpool Galaxy', 'backEnd/assets/Lumina.jpg'),
-    ('Solara', 10, true, 'Celestia, Gaia Prime', 'Milky Way Galaxy', 'backEnd/assets/Solara.jpg'),
-    ('Zephyria', 70, true, 'Aetheria, Novara', 'Andromeda Galaxy', 'backEnd/assets/Zephyria.jpg'),
-    ('Novara', 55, false, 'Aetheria, Zephyria', 'Andromeda Galaxy', 'backEnd/assets/Novara.jpg'),
-    ('Astralis', 80, true, NULL, 'Triangulum Galaxy', 'backEnd/assets/Astralis.jpg'),
-    ('Veridian', 25, false, NULL, 'Milky Way Galaxy', 'backEnd/assets/Veridian.jpg'),
-    ('Celestia', 15, true, 'Solara, Gaia Prime', 'Milky Way Galaxy', 'backEnd/assets/Celestia.jpg'),
-    ('Gaia Prime', 20, false, 'Solara, Celestia', 'Milky Way Galaxy', 'backEnd/assets/GaiaPrime.jpg'),
-    ('Elysium', 40, true, NULL, 'Sculptor Galaxy', 'https://example.com/elysium.jpg'),
-    ('Xanadu', 120, true, NULL, 'Sombrero Galaxy', 'https://example.com/xanadu.jpg'),
-    ('Olympus', 90, false, 'Astralis', 'Leo I Galaxy', 'https://example.com/olympus.jpg');
+    ('Aetheria', 50, true, 'Zephyria, Novara', 'Andromeda Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Aetheria.jpg'),
+    ('Lumina', 30, false, 'Nebulia, Astralis', 'Whirlpool Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Lumina.jpg'),
+    ('Solara', 10, true, 'Celestia, Gaia Prime', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Solara.jpg'),
+    ('Zephyria', 70, true, 'Aetheria, Novara', 'Andromeda Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Zephyria.jpg'),
+    ('Novara', 55, false, 'Aetheria, Zephyria', 'Andromeda Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Novara.jpg'),
+    ('Astralis', 80, true, 'Elysium, Lumina', 'Triangulum Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Astralis.jpg'),
+    ('Veridian', 25, false, 'Xanadu, Olympus', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Veridian.jpg'),
+    ('Celestia', 15, true, 'Solara, Gaia Prime', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Celestia.jpg'),
+    ('Gaia Prime', 20, false, 'Solara, Celestia', 'Milky Way Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/GaiaPrime.jpg'),
+    ('Elysium', 40, true, 'Astralis, Lumina', 'Sculptor Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Elysium.jpg'),
+    ('Xanadu', 120, true, 'Veridian, Olympus', 'Sombrero Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Xanadu.jpg'),
+    ('Olympus', 90, false, 'Xanadu, Elysium', 'Leo I Galaxy', 'frontEnd/planet-purchase-plans/src/Components/images/Olympus.jpg');
+
+
+
+
 
 
 INSERT INTO reviews (reviewer, title, content, rating, planet_id)
@@ -29,7 +33,7 @@ VALUES
 ('StellarDreamer', 'A Celestial Utopia', 'Aetheria is a celestial utopia that surpasses all expectations. Its ethereal landscapes and celestial phenomena evoke a sense of tranquility and serenity. The speed of travel to Aetheria allowed me to escape to this celestial paradise in an instant.', 5, 1),
 ('GalacticExplorer', 'A Gateway to the Stars', 'Aetheria is a celestial gateway to the wonders of the universe. Its captivating celestial bodies and cosmic phenomena create a sense of awe and intrigue. The swift travel to Aetheria allowed me to venture deep into the mysteries of the cosmos.', 5, 1),
 ('AstroNomad', 'An Astral Escape', 'Aetheria is an astral escape that captivates the senses. Its celestial landscapes and celestial symphony create a realm of celestial beauty. The high-speed travel to Aetheria whisked me away to this celestial sanctuary in no time.', 5, 1),
-('CosmicAdventurer', 'A Celestial Marvel', 'Aetheria is a celestial marvel that defies imagination. Its celestial wonders and cosmic spectacle left me breathless.' 5,1), 
+('CosmicAdventurer', 'A Celestial Marvel', 'Aetheria is a celestial marvel that defies imagination. Its celestial wonders and cosmic spectacle left me breathless.', 5, 1), 
 ('StellarVoyager123', 'A Dazzling Gem', 'Lumina is a celestial jewel that sparkles with radiant beauty. The shimmering landscapes and ethereal glow create an enchanting atmosphere. The rapid travel to Lumina made the journey feel like a magical voyage to a realm of light.', 5, 2),
 ('CosmicExplorer789', 'A Celestial Lightshow', 'Visiting Lumina was like stepping into a cosmic lightshow. The vibrant colors and dancing lights left me mesmerized. The high-speed travel to Lumina allowed me to witness this celestial spectacle with unparalleled speed and ease.', 5, 2),
 ('AstroDreamer456', 'A Radiant Wonderland', 'Lumina is a radiant wonderland that bathes you in its ethereal glow. The captivating luminosity and celestial radiance create a truly magical ambiance. The swift travel to Lumina allowed me to bask in its luminous beauty in no time.', 5, 2),
@@ -116,7 +120,7 @@ VALUES
 ('NightmareSeeker', 'A Haunting Nightmare', 'This planet is a haunting nightmare that will haunt my dreams. The sinister presence and twisted landscapes were beyond comprehension. The swift travel to this planet made the horrifying experiences all the more nightmarish.', 5, 8),
 ('CreepyExplorer', 'A Creepy Encounter', 'This planet is a realm of creepy encounters. I witnessed strange phenomena and felt an eerie presence throughout my visit. The high-speed travel to this planet heightened the spine-tingling nature of the experience.', 4, 8),
 ('HorrorEnthusiast', 'A Terrifying Adventure', 'Visiting this planet was a heart-stopping adventure. I encountered horrifying creatures and witnessed terrifying events. The rapid travel to this planet intensified the bone-chilling experiences.', 5, 8),
-('ShiveringTraveler', 'A World of Horror', 'This planet is a world of horror and terror. I experienced unexplained phenomena and encountered horrifying sights. The swift travel to this planet made the blood-curdling encounters all the more petrifying.', 5, 8)
+('ShiveringTraveler', 'A World of Horror', 'This planet is a world of horror and terror. I experienced unexplained phenomena and encountered horrifying sights. The swift travel to this planet made the blood-curdling encounters all the more petrifying.', 5, 8),
 ('CosmicJester', 'Out-of-this-World Comedy', 'Visiting this planet was like stepping into a cosmic comedy show. The quirky landscapes and peculiar flora had me laughing out loud. The high-speed travel to this planet added an extra element of hilarity to the experience.', 5, 9),
 ('LaughingExplorer', 'A Planet of Giggles', 'This planet had me in fits of laughter from start to finish. The hilarious landscapes and comical creatures provided endless entertainment. The rapid travel to this planet made the laughter come at warp speed!', 5, 9),
 ('JovialAdventurer', 'A Fun-Filled Extravaganza', 'Exploring this planet was an absolute blast! The whimsical landscapes and amusing sights had me smiling from ear to ear. The swift travel to this planet made it feel like a joyride through a cosmic amusement park.', 5, 9),
@@ -159,4 +163,4 @@ VALUES
 ('ReverseExplorer', 'Exploring the Reversed', 'Exploring this planet was like stepping into a reversed version of Earth. The landscapes and natural phenomena were bizarrely mirrored, challenging my perceptions. The rapid travel to this planet added an extra layer of fascination to the already peculiar journey.', 3, 12),
 ('ContradictoryVoyager', 'Journey of Opposites', 'My journey on this planet was a delightful paradox of opposites. Everything I knew was reversed, creating a unique and thought-provoking experience. The high-speed travel to this planet heightened the sense of intrigue and fascination.', 4, 12),
 ('InverseAdventurer', 'An Inverse Adventure', 'Embarking on an adventure on this planet was like delving into an inverse reality. The landscapes, climate, and even the behaviors of the inhabitants were intriguingly opposite. The swift travel to this planet added an extra layer of excitement to the enigmatic expedition.', 4, 12),
-('QuirkyTraveler', 'A Quirky Flipside', 'This planet offered a quirky flipside to everything I knew. The familiar sights and sounds were delightfully twisted', 4, 12),
+('QuirkyTraveler', 'A Quirky Flipside', 'This planet offered a quirky flipside to everything I knew. The familiar sights and sounds were delightfully twisted', 4, 12);

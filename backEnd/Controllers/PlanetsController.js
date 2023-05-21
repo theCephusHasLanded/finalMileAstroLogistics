@@ -7,18 +7,18 @@ const {
   deletePlanet,
   updatePlanet,
 } = require("../queries/planets");
-const { checkName} = require("../validations/checkPlanets");
+const { checkName } = require("../validations/checkPlanets");
 
-//GET ROUTE
+// GET ROUTE
 planets.get("/", async (req, res) => {
   const allPlanets = await getAllPlanets();
   res.status(200).json(allPlanets);
 });
 
-//GET ONE ROUTE
+// GET ONE ROUTE
 planets.get("/:id", async (req, res) => {
   const { id } = req.params;
-  const planet = await getAPlanet(id); 
+  const planet = await getAPlanet(id);
 
   if (planet) {
     res.status(200).json(planet);
@@ -27,12 +27,12 @@ planets.get("/:id", async (req, res) => {
   }
 });
 
-//CREATE ROUTE
+// CREATE ROUTE
 planets.post("/", checkName, async (req, res) => {
   const newPlanet = req.body;
 
-  if (!newPlanet.calorie) {
-    res.status(400).json({ error: "Planet is missing" });
+  if (!newPlanet.name) {
+    res.status(400).json({ error: "Planet name is missing" });
   } else {
     try {
       const addedPlanet = await createPlanet(newPlanet);
@@ -43,7 +43,7 @@ planets.post("/", checkName, async (req, res) => {
   }
 });
 
-//DELETE ROUTE
+// DELETE ROUTE
 planets.delete("/:id", async (req, res) => {
   const { id } = req.params;
 
@@ -52,18 +52,18 @@ planets.delete("/:id", async (req, res) => {
     if (deletedPlanet.id) {
       res.status(200).json(deletedPlanet);
     } else {
-      throw new Error("A planet with that Id does not exist");
+      res.status(404).json({ error: "A planet with that ID does not exist" });
     }
   } catch (error) {
     res.status(404).json({ error: error });
   }
 });
 
-//UPDATE ROUTE
+// UPDATE ROUTE
 planets.put("/:id", checkName, async (req, res) => {
   const { id } = req.params;
   const planetToUpdate = req.body;
-  console.log(id, req.body)
+
   try {
     const existingPlanet = await getAPlanet(id);
 
@@ -78,12 +78,14 @@ planets.put("/:id", checkName, async (req, res) => {
     );
 
     if (!isModified) {
-      res.status(400).json({ error: "No changes detected in the planet object" });
+      res
+        .status(400)
+        .json({ error: "No changes detected in the planet object" });
       return;
     }
 
-    const updatePlanet = await updatePlanet(id, planetToUpdate);
-    res.status(200).json(updatePlanet);
+    const updatedPlanet = await updatePlanet(id, planetToUpdate);
+    res.status(200).json(updatedPlanet);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

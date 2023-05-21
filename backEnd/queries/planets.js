@@ -24,13 +24,14 @@ const getAPlanet = async (id) => {
 const createPlanet = async (newPlanet) => {
   try {
     const createdPlanet = await db.one(
-      "INSERT INTO planets (name, distance_from_earth, signs_of_life, neighboring_planets, galaxy) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+      "INSERT INTO planets (name, distance_from_earth, signs_of_life, neighboring_planets, galaxy, photo_url) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
       [
         newPlanet.name,
         newPlanet.distance_from_earth,
         newPlanet.signs_of_life,
         newPlanet.neighboring_planets,
         newPlanet.galaxy,
+        newPlanet.photo_url,
       ]
     );
     return createdPlanet;
@@ -43,13 +44,14 @@ const createPlanet = async (newPlanet) => {
 const updatePlanet = async (id, planetToUpdate) => {
   try {
     const updatedPlanet = await db.one(
-      "UPDATE planets SET name=$1, distance_from_earth=$2, signs_of_life=$3, neighboring_planets=$4, galaxy=$5 WHERE id=$6 RETURNING *",
+      "UPDATE planets SET name=$1, distance_from_earth=$2, signs_of_life=$3, neighboring_planets=$4, galaxy=$5, photo_url=$6 WHERE id=$7 RETURNING *",
       [
         planetToUpdate.name,
         planetToUpdate.distance_from_earth,
         planetToUpdate.signs_of_life,
         planetToUpdate.neighboring_planets,
         planetToUpdate.galaxy,
+        planetToUpdate.photo_url,
         id,
       ]
     );

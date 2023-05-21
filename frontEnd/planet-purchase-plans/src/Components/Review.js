@@ -9,13 +9,14 @@ function Review({ review, handleDelete, handleEdit }) {
   };
 
   return (
-    <div className="Review text-center" style={{ maxWidth: "500px", margin: "0 auto", paddingTop: "50px" }}>
-      <h2>Reviews</h2>
-      <Card>
+    <div className="Review text-center">
+      <Card className="glow-card" style={{ maxWidth: "500px", margin: "0 auto", paddingTop: "10px" }}>
         <Card.Body>
-          <Button variant="success" onClick={toggleView} style={{ backgroundColor: "#4CAF50", color: "white", fontFamily: "Funk Gibson" }}>
+          <Button variant="success" onClick={toggleView} className="edit-button">
             Edit this Review
           </Button>
+          <br />
+          <br />
           {viewEditForm ? (
             <ReviewForm reviewDetails={review} toggleView={toggleView} handleEdit={handleEdit} />
           ) : (
@@ -24,13 +25,13 @@ function Review({ review, handleDelete, handleEdit }) {
               <h5>
                 <span style={{ fontWeight: "bold", textDecoration: "underline" }}>Rating: {review.rating}</span>
               </h5>
-              <br /> {/* Add a line break */}
-              <img src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="User Face" style={{ width: "70px", borderRadius: "50%" }} /> {/* Decrease size, add rounded edge */}
+              <br />
+              <img src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="User Face" className="user-avatar" />
               <h6>{review.reviewer}</h6>
               <p>{review.content}</p>
             </div>
           )}
-          <Button variant="danger" onClick={() => handleDelete(review.id)} style={{ backgroundColor: "black", color: "white", fontFamily: "Funk Gibson" }}>
+          <Button variant="danger" onClick={() => handleDelete(review.id)} className="delete-button">
             Delete
           </Button>
         </Card.Body>

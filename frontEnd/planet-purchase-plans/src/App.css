@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.bg-purple {
+  background-color: #800080;
+}
+.glow-card {
+  box-shadow: 0 0 20px #FF7F00;
+  transition: box-shadow 0.3s;
+  background-color: bisque;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.glow-card:hover {
+  box-shadow: 0 0 30px #FF7F00;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.edit-button {
+  background-color: #FF7F00;
   color: white;
+  font-family: "Syne";
+  box-shadow: 0 0 20px #FF7F00;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-button {
+  background-color: #FF4500;
+  color: white;
+  font-family: "Syne";
+  box-shadow: 0 0 20px #FF4500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.user-avatar {
+  width: 70px;
+  border-radius: 50%;
+}
+.submit-button {
+  background-color: #FFA500;
+  color: white;
+  font-family: "Syne", sans-serif;
+  animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #FFA500;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    box-shadow: 0 0 20px #FFA500;
+  }
+  100% {
+    box-shadow: 0 0 5px #FFA500;
   }
 }

@@ -21,7 +21,7 @@ function Planets() {
   };
 
   const tableStyle = {
-    background: "#E7F0C3",
+    background: "linear-gradient(to bottom, #44234D, #360B41)",
     border: "none",
     borderRadius: "10px",
     boxShadow: "5px 5px 10px #BFBFBF",
@@ -29,16 +29,16 @@ function Planets() {
   };
 
   const tableHeaderStyle = {
-    background: "#77BE5E",
+    background: "linear-gradient(to bottom, #6A3795, #4D1C76)",
     color: "white",
     textAlign: "center",
-    fontFamily: "Funk Gibson",
+    fontFamily: "Syne",
   };
 
   const buttonStyle = {
-    backgroundColor: "#6FBF73",
+    backgroundColor: "#7327A6",
     color: "white",
-    fontFamily: "Funk Gibson",
+    fontFamily: "Syne",
   };
 
   return (

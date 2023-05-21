@@ -1,4 +1,4 @@
-import EditPlanet from "../src/Components/EditPlanet";
+import EditPlanet from "../Pages/Edit.js";
 import { Container } from "react-bootstrap";
 
 function Edit() {

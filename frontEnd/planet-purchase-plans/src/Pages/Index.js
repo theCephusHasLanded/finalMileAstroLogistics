@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Planets from "../src/Components/Planets";
+import Planets from "../Components/Planets";
 
 function Index() {
   return (

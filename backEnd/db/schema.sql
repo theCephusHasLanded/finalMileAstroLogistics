@@ -14,7 +14,8 @@ CREATE TABLE planets (
   distance_from_earth INTEGER,
   signs_of_life BOOLEAN,
   neighboring_planets VARCHAR(255),
-  galaxy VARCHAR(255)
+  galaxy VARCHAR(255),
+  photo_url VARCHAR(255)
 );
 
 -- always drop the table if it exists
@@ -22,11 +23,10 @@ DROP TABLE IF EXISTS reviews;
 
 -- Create a table for our planets reviews
 CREATE TABLE reviews (
-    id SERIAL PRIMARY KEY,
-    reviewer TEXT,
-    title TEXT,
-    content TEXT,
-    rating INT CHECK (rating >= 1 AND rating <= 5),
-    planets_id INTEGER REFERENCES planets (id)
-    ON DELETE CASCADE
+  id SERIAL PRIMARY KEY,
+  reviewer VARCHAR(255),
+  title VARCHAR(255),
+  content TEXT,
+  rating INTEGER,
+  planet_id INTEGER REFERENCES planets(id)
 );
